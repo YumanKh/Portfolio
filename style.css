@@ -42,8 +42,8 @@ header h1 {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
     border-radius: 10px;
+    transition: background-color 0.5s ease;
 }
 
 .header-button:hover {
@@ -51,6 +51,7 @@ header h1 {
     color: var(--big-text);
     transform: translate(1px, -1px);
     box-shadow: 1px 1px 0px rgba(50, 50, 50, 0.5);
+    transition: background-color 0.5s ease;
 }
 
 .header-button:active {
