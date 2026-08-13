@@ -12,7 +12,7 @@
 body {
     background-color: var(--bg);
     color: var(--big-text);
-    font-family: Georgia, Helvetica, sans-serif;
+    font-family: Lexend, Helvetica, sans-serif;
     margin: 0;
 }
 
@@ -20,7 +20,7 @@ header {
     position: sticky;
     top: 0;
     background-color: var(--bg);
-    padding: 20px;
+    padding: 10px 250px;
     border-bottom: 1px solid var(--card-bg);
     display: flex;
     align-items: center;
@@ -29,6 +29,7 @@ header {
 
 header h1 {
     text-align: left;
+    font-size: 20px;
 }
 
 .header-button {
