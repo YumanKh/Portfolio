@@ -56,4 +56,59 @@ header h1 {
     box-shadow: 2px 2px 0px rgba(50, 50, 50, 0.5);
     background-color: var(--big-text);
     color: var(--bg);
+    transition: background-color 0.5s ease;
+}
+
+main {
+    background-color: var(--bg);
+    display: flex;
+    align-items: center;
+    padding: 20px 250px;
+}
+
+main h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.card {
+    border: 2px solid var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card-grid p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+.card:hover {
+    background-color: var(--card-bg);
+    transform: translate(-1px, -1px);
+    box-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.card:hover p {
+    color: var(--big-text);
+}
+
+.card:active {
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 0px rgba(255, 255, 255, 0.5);
+    background-color: var(--big-text);
+    color: var(--bg);
+    transition: background-color 0.5s ease;
+}
+
+.card:active p {
+    color: var(--bg);
 }
