@@ -26,6 +26,7 @@ header {
     display: flex;
     align-items: center;
     backdrop-filter: blur(10px);
+    z-index: 1000;
 }
 
 header h1 {
