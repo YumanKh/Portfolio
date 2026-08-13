@@ -1,4 +1,5 @@
 :root{
+    --header-bg: rgb(20, 20, 20, 0.5);
     --bg: rgb(0, 0, 0);
     --card-bg: rgb(20, 20, 20);
     --text: rgb(220, 220, 220);
@@ -19,7 +20,7 @@ body {
 header {
     position: sticky;
     top: 0;
-    background-color: var(--bg);
+    background-color: var(--header-bg);
     padding: 10px 250px;
     border-bottom: 1px solid var(--card-bg);
     display: flex;
@@ -75,6 +76,7 @@ main h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
+    padding-bottom: 50px;
 }
 
 .card-grid p {
@@ -128,4 +130,30 @@ main h2 {
 
 .card:active p {
     color: var(--bg);
+}
+
+footer {
+    position:sticky;
+    background-color: var(--card-bg);
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    width: 100%;
+}
+
+.copyright {
+    padding-left: 40px;
+    font-size: 14px;
+    color: var(--text);
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    padding-right: 40px;
+    margin-left: auto;
+}
+
+.social-link {
+    color: var(--text);
 }
