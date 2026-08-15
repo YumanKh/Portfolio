@@ -63,6 +63,10 @@ header h1 {
 }
 
 main {
+    background-image: url('images/bg-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: var(--bg);
     display: flex;
     align-items: center;
@@ -96,6 +100,7 @@ main h2 {
 }
 
 .card {
+    background-color: var(--bg);
     border: 2px solid var(--card-bg);
     padding: 20px;
     border-radius: 10px;
