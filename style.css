@@ -101,6 +101,8 @@ main h2 {
     border-radius: 10px;
     cursor: pointer;
     height: 180px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .card:hover {
