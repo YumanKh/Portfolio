@@ -1,7 +1,8 @@
-import { useState } from 'react'
 import {Routes, Route} from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
+import MainPage from './MainPage'
+
 
 function App() {
 
@@ -9,12 +10,10 @@ function App() {
     <>
         <Header/>
         <Routes>
-          <Route/>
+          <Route path = "/" element= {<MainPage/>}/>
         </Routes>
         <Footer/>
     </>
-
-
   );
 }
 
