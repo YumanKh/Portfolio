@@ -12,7 +12,6 @@ const Header = () => {
                     <button>About me</button>
                     <button>Contact me</button>
                 </div>
-
                 <h2>WIP: Description</h2>
             </header>
         </>

@@ -3,6 +3,11 @@ const Footer = () => {
         <>
             <footer>
                 <p className = 'copyright'>&copy; 2026 Yuman Khoufache. All rights reserved.</p>
+                <div className= "nav-buttons-footer">
+                    <button className={location.pathname === "/" ? "active" : ""}>Home</button>
+                    <button>About me</button>
+                    <button>Contact me</button>
+                </div>
                 <div className = 'social-links'>
                     <a className = "social-link" href="https://github.com/YumanKh" target="_blank" aria-label="GitHub">
                         <svg viewBox="0 0 24 24" width="20" height="20">
@@ -20,6 +25,7 @@ const Footer = () => {
                         </svg>
                      </a>
                 </div>
+
             </footer>
         </>
     );
