@@ -1,14 +1,13 @@
 :root{
-    --header-bg: rgba(50, 50, 50);
+    --header-bg: rgb(50, 50, 50);
+    --footer-bg: rgb(20, 20, 20);
     --text: rgb(220, 220, 220);
 }
 
 * {
     box-sizing: border-box;
-}
-
-body{
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -25,7 +24,6 @@ header{
     align-items: center;
 
     h1{
-        margin: 0px;
         margin-right: auto;
         text-align: right;
         font-size: 25px;
@@ -63,4 +61,62 @@ header{
         font-size: 20px;
     }
 
+}
+
+footer{
+    position: sticky;
+    background-color: var(--footer-bg);
+    color: var(--text);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-inline: 100px;
+
+    .copyright{
+        margin-right: auto;
+    }
+
+    .nav-buttons-footer{
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px
+    }
+
+    .nav-buttons-footer button{
+        padding-inline: 0px;
+        border: 1px transparent;
+        background-color: var(--footer-bg);
+        border-bottom: 2px solid transparent;
+        color: var(--text);
+        cursor: pointer;
+        font-size: 14px;
+        align-items: end;
+    }
+
+    .nav-buttons-footer button:hover{
+        border-bottom: 2px solid var(--text);
+        padding-inline: 0px;
+    }
+
+    .nav-buttons-footer button.active{
+        border-bottom: 2px solid var(--text);
+        padding-inline: 0px;
+    }
+
+    .social-links{
+        flex-basis: 100%;
+        margin-top: -45px;
+        display: flex;
+        justify-content: flex-start;
+        color: var(--text);
+        gap: 20px;
+    }
+
+    .social-links a{
+        color: inherit;
+    }
 }
