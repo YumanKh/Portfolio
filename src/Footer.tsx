@@ -1,12 +1,20 @@
+import {Link} from 'react-router-dom'
+
 const Footer = () => {
     return (
         <>
             <footer>
                 <p className = 'copyright'>&copy; 2026 Yuman Khoufache. All rights reserved.</p>
                 <div className= "nav-buttons-footer">
-                    <button className={location.pathname === "/" ? "active" : ""}>Home</button>
-                    <button>About me</button>
-                    <button>Contact me</button>
+                    <Link to= '/'>
+                        <button >Home</button>
+                    </Link>
+                    <Link to= '/AboutMe'>
+                        <button>About me</button>
+                    </Link>
+                    <Link to= '/ContactMe'>
+                        <button>Contact me</button>
+                    </Link>
                 </div>
                 <div className = 'social-links'>
                     <a className = "social-link" href="https://github.com/YumanKh" target="_blank" aria-label="GitHub">

@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 const Header = () => {
     const location = useLocation();
@@ -8,9 +8,15 @@ const Header = () => {
             <header>
                 <h1>Yuman Khoufache • CS Student</h1>
                 <div className= "nav-buttons">
-                    <button className={location.pathname === "/" ? "active" : ""}>Home</button>
-                    <button>About me</button>
-                    <button>Contact me</button>
+                    <Link to= '/'>
+                        <button className={location.pathname === "/" ? "active" : ""}>Home</button>
+                    </Link>
+                    <Link to= '/AboutMe'>
+                        <button className={location.pathname === "/AboutMe" ? "active" : ""}>About me</button>
+                    </Link>
+                    <Link to= '/ContactMe'>
+                        <button className={location.pathname === "/ContactMe" ? "active" : ""}>Contact me</button>
+                    </Link>
                 </div>
                 <h2>WIP: Description</h2>
             </header>
