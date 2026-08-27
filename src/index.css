@@ -1,6 +1,7 @@
 :root{
     --header-bg: rgb(50, 50, 50);
     --footer-bg: rgb(20, 20, 20);
+    --page-bg: rgb(35, 35, 35);
     --text: rgb(220, 220, 220);
 }
 
@@ -123,4 +124,56 @@ footer{
     .social-links a{
         color: inherit;
     }
+}
+
+main{
+    background-color: var(--page-bg);
+    color: var(--text);
+    padding-inline: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+
+    .securevault-card{
+        width: 300px;
+        height: 250px;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    .securevault-showcase{
+        display: flex;
+        width: 100%;
+        gap: 100px;
+    }
+
+    .project-text{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .project-text h3{
+        font-family: 20px;
+    }
+
+    .project-text p{
+        width: 300px;
+    }
+
+    .project-link{
+        display: block;
+        width: 100%;
+        padding-block: 15px;
+        color: inherit;
+        text-align: center;
+        text-decoration: none;
+        margin-top: auto;
+        border: 2px solid black;
+    }
+
+
 }
