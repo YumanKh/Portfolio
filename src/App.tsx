@@ -11,7 +11,7 @@ function App() {
     <>
         <Header/>
           <Routes>
-            <Route path = "/" element= {<MainPage/>}/>
+            <Route path = "/Portfolio" element= {<MainPage/>}/>
             <Route path = "/AboutMe" element= {<AboutMe/>}/>
             <Route path = "/ContactMe" element= {<ContactMe/>}/>
           </Routes>

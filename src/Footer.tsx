@@ -6,7 +6,7 @@ const Footer = () => {
             <footer>
                 <p className = 'copyright'>&copy; 2026 Yuman Khoufache. All rights reserved.</p>
                 <div className= "nav-buttons-footer">
-                    <Link to= '/'>
+                    <Link to= '/Portfolio'>
                         <button >Home</button>
                     </Link>
                     <Link to= '/AboutMe'>

@@ -8,8 +8,8 @@ const Header = () => {
             <header>
                 <h1>Yuman Khoufache • CS Student</h1>
                 <div className= "nav-buttons">
-                    <Link to= '/'>
-                        <button className={location.pathname === "/" ? "active" : ""}>Home</button>
+                    <Link to= '/Portfolio'>
+                        <button className={location.pathname === "/Portfolio" ? "active" : ""}>Home</button>
                     </Link>
                     <Link to= '/AboutMe'>
                         <button className={location.pathname === "/AboutMe" ? "active" : ""}>About me</button>
