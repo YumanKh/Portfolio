@@ -248,4 +248,86 @@ main {
     .project-link:hover {
         text-decoration: underline;
     }
+
+    .about-showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    }
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about-text h3 {
+        font-size: 22px;
+    }
+
+    .about-text p {
+        width: 100%;
+        max-width: 700px;
+        color: var(--text-muted);
+        line-height: 1.6;
+    }
+
+    .about-stack h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .stack-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .stack-tags .project-tag {
+        padding: 6px 14px;
+        background-color: var(--card-bg);
+        border-radius: 20px;
+        text-transform: none;
+        letter-spacing: normal;
+        color: var(--text-muted);
+        font-weight: bold;
+    }
+
+    .about-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    }
+
+    .stack-group h4 {
+        color: var(--text);
+        font-size: 16px;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .contact h4 {
+        color: var(--text);
+        font-size: 18px;
+        margin-bottom: 12px;
+        letter-spacing: 0.5px;
+    }
+
+    .contact .contact-me-button{
+        margin-top: 20px;
+        background-color: var(--header-bg);
+        color: var(--text);
+        font-size: 18px;
+        padding: 6px 14px;
+        border-color: transparent;
+        border-radius: 20px;
+        transition: box-shadow 0.3s ease, transform 0.5s ease;
+    }
+
+    .contact .contact-me-button:hover {
+        box-shadow: 1px 1px 0px black;
+        transform: translate(-1px, -1px);
+    }
 }
