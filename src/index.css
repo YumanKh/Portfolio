@@ -3,6 +3,7 @@
     --footer-bg: rgb(20, 20, 20);
     --page-bg: rgb(35, 35, 35);
     --text: rgb(220, 220, 220);
+    --text-muted: #aaaa;
 }
 
 * {
@@ -126,54 +127,94 @@ footer{
     }
 }
 
-main{
+main {
     background-color: var(--page-bg);
     color: var(--text);
     padding-inline: 300px;
     padding-top: 40px;
     padding-bottom: 40px;
     display: flex;
+}
 
-    .securevault-card{
-        width: 300px;
-        height: 250px;
-        background-color: red;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: auto;
-    }
+.securevault-showcase {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 100px;
+}
 
-    .securevault-showcase{
-        display: flex;
-        width: 100%;
-        gap: 100px;
-    }
+.project-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-    .project-text{
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
+.project-text h3 {
+    font-size: 22px;
+}
 
-    .project-text h3{
-        font-family: 20px;
-    }
+.project-text p {
+    width: 300px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
 
-    .project-text p{
-        width: 300px;
-    }
+.project-card {
+    width: 300px;
+    height: 325px;
+    margin-left: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--card-bg);
+    transition: box-shadow 0.5s ease;
+}
 
-    .project-link{
-        display: block;
-        width: 100%;
-        padding-block: 15px;
-        color: inherit;
-        text-align: center;
-        text-decoration: none;
-        margin-top: auto;
-        border: 2px solid black;
-    }
+.project-card:hover {
+    box-shadow: 1px 1px 0px black;
+}
 
+.project-image {
+    width: 100%;
+    height: 180px;
+    background-color: #444;
+    background-size: cover;
+    background-position: center;
 
+    .securevault-image {
+    /* background image */
+    }   
+}
+
+.project-card-info {
+    display: flex;
+    margin-right: auto;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 8px;
+}
+
+.project-card-info h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.project-tag {
+    margin: 0;
+    font-size: 13px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.project-link {
+    margin-top: 15px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
 }
