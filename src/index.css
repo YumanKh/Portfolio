@@ -65,7 +65,7 @@ header{
     h2{
         flex-basis: 100%;
         text-align: center;
-        font-size: 20px;
+        font-size: 16px;
     }
 
 }
@@ -138,7 +138,6 @@ main {
     flex-wrap: wrap;
     gap: 50px;
 
-
     .securevault-showcase {
         display: flex;
         align-items: center;
@@ -187,11 +186,12 @@ main {
         border-radius: 12px;
         overflow: hidden;
         background-color: var(--card-bg);
-        transition: box-shadow 0.3s ease;
+        transition: box-shadow 0.3s ease, transform 0.5s ease;
     }
 
     .project-card:hover {
         box-shadow: 1px 1px 0px black;
+        transform: translate(-3px, -3px);
     }
 
     .project-image {
@@ -209,8 +209,8 @@ main {
             /* background image */
         }
 
-        &.pong-showcase{
-            /* background image */
+        &.pong-image{
+            background-image: url("./assets/yukmans-pong.png");
         }
     }
 

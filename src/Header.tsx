@@ -18,7 +18,7 @@ const Header = () => {
                         <button className={location.pathname === "/ContactMe" ? "active" : ""}>Contact me</button>
                     </Link>
                 </div>
-                <h2>WIP: Description</h2>
+                <h2>Client-Server Software Engineer</h2>
             </header>
         </>
     );

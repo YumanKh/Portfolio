@@ -35,7 +35,7 @@ const MainPage = () => {
                     <div className="project-text">
                         <h3>Portfolio Website</h3>
                         <p>
-                            This portfolio itself is a project. First built as a static HTML/CSS site to
+                            This website itself is a project. First built as a static HTML/CSS site to
                             practice core web fundamentals: semantic structure, the box model, Flexbox and
                             Grid layouts, and responsive design, all without any framework. That first
                             version was minimalist; what you're looking at now is a complete
