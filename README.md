@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Portfolio
 
 Personal portfolio website, built to showcase my projects and background as a client-server software engineer.
@@ -52,11 +51,9 @@ npm run build
 npm run deploy
 ```
 
+
 ## Author
 
 **© 2026 Yuman Khoufache. All rights reserved.** 
 
 - GitHub: [@YumanKh](https://github.com/YumanKh)
-=======
-WIP
->>>>>>> 362d13a71f14c7b6a128d406c7766a50b67bdb09

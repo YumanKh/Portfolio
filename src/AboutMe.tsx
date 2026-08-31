@@ -6,35 +6,47 @@ const AboutMe = () => {
         <>
             <main>
                 <section className="about-showcase">
-                    <div className="about-text">
-                        <h3>About Me</h3>
-                        <p>
-                            I started programming with Python, initially assuming that
-                            learning a language's syntax was the whole picture and that being fluent in a
-                            language was enough to build a career on.
-                        </p>
-                        <p>
-                            That assumption held until my second semester of college, after a conversation
-                            about what it actually takes to land a stable software engineering role. The
-                            advice was simple: just build projects. It motivated me, pushing my C++
-                            further than any classroom required and building YuKman's Pong from scratch,
-                            including my own application loop and UI, using SFML.
-                        </p>
-                        <p>
-                            While learning .NET Core for Secure Vault, I realized that isolated language
-                            projects still weren't the full job. The market runs on stacks, not
-                            languages in isolation, and being effective means understanding how a client,
-                            a server, and a database actually communicate with each other. That's what
-                            pushed me to build Secure Vault as a full ASP.NET Core REST API instead of
-                            stopping at another command-line version.
-                        </p>
-                        <p>
-                            And today, that realization shaped my current stack: Node.js, React, and
-                            PostgreSQL. I want to see myself as a client-server software engineer. someone
-                            who builds systems end-to-end, with an eye for what makes a junior developer
-                            genuinely competitive.
-                        </p>
+                    <div className="github-showcase">
+                        <div className="about-text">
+                            <h3>About Me</h3>
+                            <p>
+                                I started programming with Python, initially assuming that
+                                learning a language's syntax was the whole picture and that being fluent in a
+                                language was enough to build a career on.
+                            </p>
+                            <p>
+                                That assumption held until my second semester of college, after a conversation
+                                about what it actually takes to land a stable software engineering role. The
+                                advice was simple: just build projects. It motivated me, pushing my C++
+                                further than any classroom required and building YuKman's Pong from scratch,
+                                including my own application loop and UI, using SFML.
+                            </p>
+                            <p>
+                                While learning .NET Core for Secure Vault, I realized that isolated language
+                                projects still weren't the full job. The market runs on stacks, not
+                                languages in isolation, and being effective means understanding how a client,
+                                a server, and a database actually communicate with each other. That's what
+                                pushed me to build Secure Vault as a full ASP.NET Core REST API instead of
+                                stopping at another command-line version.
+                            </p>
+                            <p>
+                                And today, that realization shaped my current stack: Node.js, React, and
+                                PostgreSQL. I want to see myself as a client-server software engineer. someone
+                                who builds systems end-to-end, with an eye for what makes a junior developer
+                                genuinely competitive.
+                            </p>
+                        </div>
+
+                        <div className="card">
+                            <div className="card-image"></div>
+                            <div className="card-info">
+                                <h4>Github Profile</h4>
+                                <p>Yuman Khoufache</p>
+                                <a className="profile-link" href="https://github.com/YumanKh" target="_blank"> View on GitHub →</a>
+                            </div>
+                        </div>
                     </div>
+                </section>
 
                     <div className="about-stack">
                         <div className="stack-group">
@@ -64,7 +76,6 @@ const AboutMe = () => {
                             <button className="contact-me-button">Contact me</button>
                         </Link>
                     </div>
-                </section>
             </main>
         </>
     )
