@@ -139,6 +139,13 @@ main {
     flex-wrap: wrap;
     gap: 50px;
 
+    &.contact-me-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-inline: 0; 
+    }
+
     .securevault-showcase {
         display: flex;
         align-items: center;
@@ -392,6 +399,58 @@ main {
             box-shadow: 1px 1px 0px black;
             transform: translate(-1px, -1px);
         }
-        
     }
+
+    .contact-me-card {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        height: 450px;
+        gap: 5px;
+        border-radius: 12px;
+        background-color: var(--header-bg);
+
+        h3{
+            font-size: 22px;
+            padding-bottom: 10px;
+        }
+
+        h2{
+            padding-inline: 45px;
+            padding-top: 20px;
+            padding-bottom: 2px;
+            font-size: 16px;
+            margin-right: auto;
+        }
+
+        input {
+            resize: none;
+            width: 80%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid transparent;
+            background-color: var(--page-bg);
+            padding: 20px;
+            color: var(--text-muted);
+        }
+
+        input:focus {
+            outline: none;
+            border: 1px solid var(--text);
+        }
+
+        input:hover {
+            background-color: var(--card-bg);
+            color: var(--text-muted);
+        }
+
+        .message-input {
+            height: 100px;
+            resize: none;
+        }
+    }
+
 }
