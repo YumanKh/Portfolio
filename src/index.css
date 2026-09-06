@@ -407,7 +407,7 @@ main {
         flex-direction: column;
         align-items: center;
         width: 400px;
-        height: 470px;
+        height: 500px;
         gap: 5px;
         border-radius: 12px;
         background-color: var(--header-bg);
@@ -453,7 +453,6 @@ main {
 
         .send-button{
             margin-top: 20px;
-            margin-left: 120px;
             background-color: var(--card-bg);
             color: var(--text);
             font-size: 18px;
@@ -466,6 +465,30 @@ main {
         .send-button:hover {
             background-color: rgb(60, 60, 60);
         }
-    }
 
+        .send-button:active {
+            background-color: var(--page-bg);
+        }
+
+        .disabled{
+            background-color: var(--page-bg);
+            color: rgb(150, 150, 150);
+            margin-top: 20px;
+            
+            color: var(--text);
+            font-size: 18px;
+            border-color: transparent;
+            border-radius: 5px;
+            padding: 6px 14px;
+            cursor: pointer;
+            cursor: not-allowed;
+        }
+
+        p{
+            color: var(--text-muted);
+            font-size: 14px;
+            padding-top: 10px;
+        }
+   
+    }
 }

@@ -1,4 +1,5 @@
 import {useState} from "react"
+import emailjs from "@emailjs/browser"
 
 const ContactMe = () => {
     const [name, setName] = useState("")
@@ -7,13 +8,22 @@ const ContactMe = () => {
     const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
     const handleSubmit = async() => {
+        const serviceId = "service_lpb2i1n";
+        const templateId = "template_4kc9djd";
+        const templateParams = { name, email, message };
+        const publicKey = "PSYS06QYv5DKjyNbf";
+
         setStatus("sending");
         
         try{
-            // API CALL
+            await emailjs.send(
+                serviceId,
+                templateId,
+                templateParams,
+                publicKey
+            );
             setStatus("success");
         } catch (error) {
-            // API CALL
             setStatus("error");
         }
     }
