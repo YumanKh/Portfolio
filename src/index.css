@@ -1,3 +1,8 @@
+html, body {
+    height: 100%;
+    background-color: var(--page-bg);
+}
+
 :root{
     --header-bg: rgb(50, 50, 50);
     --footer-bg: rgb(20, 20, 20);
@@ -5,6 +10,12 @@
     --card-bg: rgb(40, 40, 40);
     --text: rgb(220, 220, 220);
     --text-muted: #aaaa;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 * {
@@ -136,6 +147,7 @@ main {
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
+    flex: 1;
     flex-wrap: wrap;
     gap: 50px;
 
@@ -489,6 +501,8 @@ main {
             font-size: 14px;
             padding-top: 10px;
         }
-   
     }
 }
+
+/*MOBILE / TABLET — max-width: 768px*/
+
